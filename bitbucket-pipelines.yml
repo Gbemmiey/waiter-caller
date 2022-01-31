@@ -14,9 +14,7 @@ pipelines:
             - pip
           script:
             - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-            - pip install pytest
-            - pytest -v tests/* --junitxml=test-reports/report.xml
-
+            
             - pipe: atlassian/heroku-deploy:1.2.1
               variables:
                 HEROKU_API_KEY: 'waiter-caller'
