@@ -2,12 +2,6 @@
 
 Flask App to notify restaurant staff whenever a patron needs something.
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
 ## Set up ##
 
 * The R_Manager signs up a new account on d web app
