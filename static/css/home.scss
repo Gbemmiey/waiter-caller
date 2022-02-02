@@ -1,0 +1,73 @@
+:root {
+  --pri-color: #454ade;
+  --sec-color: #1b1f3b;
+  --tert-color: #f6f5ae;
+  --color-3: #f5f749;
+  --color-4: #f24236;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  height: 50px;
+  background: var(--sec-color);
+
+  .home {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    background: var(--color-4);
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+  }
+
+  .login {
+    width: 100%;
+    place-content: space-between;
+    display: block;
+    margin-right: 5%;
+  }
+
+}
+
+#hero {
+  height: 120px;
+  background: var(--tert-color);
+  text-align: left;
+
+  h1, p {
+    margin-left: 5%;
+  }
+}
+
+#main {
+  height: 300px;
+  display: flex;
+
+  div {
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+
+  }
+
+  .col-3 {
+    display: block;
+
+    input {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+}
