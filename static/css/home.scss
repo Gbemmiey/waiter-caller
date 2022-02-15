@@ -24,7 +24,6 @@ nav {
 
   .home {
     margin-left: 10%;
-    margin-right: 45%;
 
     a {
       font-size: 1.2em;
@@ -36,12 +35,15 @@ nav {
 
   .login {
     margin-right: 10%;
-    place-content: space-between;
+    float: right;
     width: 100%;
     display: inline-block;
 
     form {
+      float: right;
+
       input {
+        margin-left: 10px;
         height: 25px;
         border: solid 0.1px white;
         border-radius: 5px;
