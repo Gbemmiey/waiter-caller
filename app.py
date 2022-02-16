@@ -1,11 +1,12 @@
 from flask import Flask
 from flask import render_template
-from flask_login import LoginManager
-from flask_login import login_required
+from flask.ext.login import LoginManager
+from flask.ext.login import login_required
 
 
 app = Flask(__name__)
 login_manager = LoginManager()
+login_manager.init_app(app)
 
 
 @app.route('/')
@@ -18,6 +19,6 @@ def home():
 def account():
     return "You are logged in"
 
-
-if __name__ == '__main__':
-    app.run()
+# 
+# if __name__ == '__main__':
+#     app.run()
